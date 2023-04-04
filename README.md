@@ -1,2 +1,1 @@
-# Personal Portfolio 
-## amsanjeev.me
+This is [my portfolio](amsanjeev.me). It's like a sneak peek into my brain, but with fewer embarrassing memories and more polished projects. Don't worry, I won't judge if you spend hours clicking around - I'd do the same thing if I were you. So come on, click away and be the best stalker you can be. Just don't forget to take breaks and stretch those creeping muscles.
