@@ -38,14 +38,14 @@ h1 {
     color: #f2234d;
 }
 a{
-    color: #000000;
+    color: #f2234d;
 }
 a:visited {
-    color: #000000;
+    color: #f2234d;
 }
 
 a[href^="mailto:"] {
-    color: black;
+    color: #f2234d;
 }
 
 .home-content {
@@ -95,7 +95,7 @@ a[href^="mailto:"] {
     padding: 10px;
     margin: 10px;
     list-style: none;
-    color: #000000;
+    color: #f2234d;
     width: 50px;
     height: 50px;
     background-color: #ffffff;
@@ -103,6 +103,5 @@ a[href^="mailto:"] {
 }
 
 .contacts li:hover {
-    color: #ffffff;
-    background-color: #f2234d;
+    background-color: #d6d6d6;
 }

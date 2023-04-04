@@ -1,6 +1,5 @@
 html,
 body {
-  height: 100%;
   font-family: 'Open Sans', sans-serif;
   margin: 0;
 }
@@ -53,31 +52,109 @@ nav li.name {
 
 .work-main {
   color: #b78624;
-  width: 70%;
   font-size: large;
-  margin-left: 15%;
   margin-top: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
 }
 
 .work-main h1 {
-  font-size: 30px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-decoration: underline;
-  text-align: center;
+  font-size: 40px;
+  font-weight: bolder;
 }
 
 .work-main p {
+  margin-top: 10px;
   font-size: 20px;
-  margin-right: 15%;
-  margin-left: 10%;
-  text-align: justify;
-  
+  color: #000000;
 }
 
 .work-main a:visited {
   color: #b78624 !important;
 }
 a{
+  color: #b78624;
+}
+
+.scroll-down {
+  position: relative;
+  text-align: center;
+  font-size: 18px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.down-arrow {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(-45%);
+  width: 30px;
+  height: 30px;
+  border-left: 1px solid #000;
+  border-bottom: 1px solid #000;
+  transform: rotate(-45deg);
+  margin: auto;
+}
+
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.project-box {
+  width: 30%;
+  margin-bottom: 50px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.project-box img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.project-box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px;
+}
+
+.project-box p {
+  font-size: 16px;
+  margin: 0 20px 20px 20px;
+}
+
+.project-box a {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #b78624;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.project-box a:hover {
+  background-color: #fff;
   color: #b78624;
 }
