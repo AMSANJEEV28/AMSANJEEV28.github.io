@@ -76,7 +76,8 @@ nav li.name {
 .work-main a:visited {
   color: #b78624 !important;
 }
-a{
+
+a {
   color: #b78624;
 }
 
@@ -157,4 +158,30 @@ a{
 .project-box a:hover {
   background-color: #fff;
   color: #b78624;
+}
+
+@media only screen and (max-width: 600px) {
+  nav {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  nav li {
+    margin: 15px;
+    text-align: center;
+
+  }
+
+  nav li.name {
+    display: none;
+  }
+
+  .scroll-down {
+    margin-top: 0px;
+  }
+
+  .project-box {
+    width: 100%;
+  }
 }

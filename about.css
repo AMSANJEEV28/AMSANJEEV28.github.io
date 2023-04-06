@@ -87,7 +87,46 @@ nav li.name {
     padding: 15px;
     font-size: 19px;
 }
-.name{
+
+.name {
     font-weight: bold;
     color: #f2234d;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        height: 50px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    nav li {
+        margin: 15px;
+        text-align: center;
+
+    }
+
+    nav li.name {
+        display: none;
+    }
+
+    .scroll-down {
+        margin-top: 0px;
+    }
+
+    .project-box {
+        width: 100%;
+    }
+
+    .about-para {
+        font-size: 16px;
+        text-align: center;
+    }
 }
