@@ -2,17 +2,41 @@ html,
 body {
   font-family: 'Open Sans', sans-serif;
   margin: 0;
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+body::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(assets/background.jpg);
+  background-size: auto;
+  background-position: center;
+  background-repeat: repeat-y;
+  opacity: 0.4;
+  z-index: -50;
 }
 
 nav {
-  height: 80px;
-  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   transition: background-color 0.1s ease-in-out;
+  z-index: 5;
+  background-color: #fff;
 }
 
 nav ul {
@@ -53,17 +77,18 @@ nav li.name {
 .work-main {
   color: #b78624;
   font-size: large;
-  margin-top: 10%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  max-width: 1200px;
+  width: 100%;
+  margin: 120px auto 0;
 }
 
 .work-main h1 {
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bolder;
 }
 
@@ -88,12 +113,11 @@ a {
   padding: 20px 0;
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 120px;
 }
 
 .down-arrow {
   position: absolute;
-  bottom: 0;
   transform: translateX(-45%);
   width: 30px;
   height: 30px;
@@ -103,62 +127,103 @@ a {
   margin: auto;
 }
 
-
-.project-container {
+.card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 100px;
-  margin-bottom: 50px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 120px auto;
+  position: relative;
 }
 
-.project-box {
-  width: 30%;
-  margin-bottom: 50px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  margin-left: 20px;
-  margin-right: 20px;
+.card {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+  width: 40%;
+  flex-basis: 31%;
+  margin: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.project-box:hover {
-  transform: translateY(-10px);
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.project-box img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.project-box h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin: 20px;
-}
-
-.project-box p {
-  font-size: 16px;
-  margin: 0 20px 20px 20px;
-}
-
-.project-box a {
-  display: block;
-  font-size: 16px;
-  font-weight: bold;
+.card-text {
+  position: absolute;
+  top: 58%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
   text-align: center;
-  padding: 10px 0;
-  background-color: #b78624;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease;
 }
 
-.project-box a:hover {
-  background-color: #fff;
-  color: #b78624;
+.card:hover .card-text {
+  opacity: 1;
 }
+.card:hover{
+  background-color: #ffe9bc;
+}
+
+.card-text p {
+  margin-top: 0;
+  text-align: justify;
+}
+
+.card-text a {
+  display: inline-block;
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+.card-text a:hover {
+  background-color: #b78624;
+}
+
+.card img {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 10px;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  opacity: 0;
+}
+
+.card h2 {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.more {
+  background-color: #f8f8f8;
+  padding: 30px;
+  margin-top: 50px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.more h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.more p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
 
 @media only screen and (max-width: 600px) {
   nav {
@@ -179,9 +244,5 @@ a {
 
   .scroll-down {
     margin-top: 0px;
-  }
-
-  .project-box {
-    width: 100%;
   }
 }
