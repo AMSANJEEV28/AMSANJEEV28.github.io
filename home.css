@@ -121,11 +121,11 @@ a[href^="mailto:"] {
   }
 
   .home-content h1 {
-    font-size: 28px;
+    font-size: x-large;
   }
 
   .home-content p {
-    font-size: 18px;
+    font-size: large;
   }
 
   .content {

@@ -245,7 +245,8 @@ a {
   }
 
   .work-main h1 {
-    font-size: 25px;
+    font-size: larger;
+    padding: 10px;
   }
 
   .work-main p {
@@ -272,7 +273,7 @@ a {
   }
 
   .card-text {
-    top: 50%;
+    top: 60%;
     font-size: x-small;
   }
 
@@ -284,16 +285,20 @@ a {
     width: 100%;
     height: 100%;
   }
-.card h2{
-  background-color: #ffffff;
-}
+
+  .card h2 {
+    background-color: #ffffff;
+  }
+
   .more {
     padding: 20px;
   }
-  .more h2{
+
+  .more h2 {
     font-size: large;
   }
-  .more p{
+
+  .more p {
     font-size: small;
     text-align: justify;
   }
