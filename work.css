@@ -160,7 +160,8 @@ a {
 .card:hover .card-text {
   opacity: 1;
 }
-.card:hover{
+
+.card:hover {
   background-color: #ffe9bc;
 }
 
@@ -176,6 +177,7 @@ a {
   padding: 10px 20px;
   text-decoration: none;
 }
+
 .card-text a:hover {
   background-color: #b78624;
 }
@@ -242,7 +244,57 @@ a {
     display: none;
   }
 
+  .work-main h1 {
+    font-size: 25px;
+  }
+
+  .work-main p {
+    margin-top: 30px;
+    ;
+  }
+
   .scroll-down {
-    margin-top: 0px;
+    margin-top: 30px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 75%;
+    max-height: 300px;
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card-text {
+    top: 50%;
+    font-size: x-small;
+  }
+
+  .card-text a {
+    padding: 10px 15px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+  }
+.card h2{
+  background-color: #ffffff;
+}
+  .more {
+    padding: 20px;
+  }
+  .more h2{
+    font-size: large;
+  }
+  .more p{
+    font-size: small;
+    text-align: justify;
   }
 }
