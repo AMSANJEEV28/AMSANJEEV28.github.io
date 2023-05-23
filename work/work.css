@@ -48,7 +48,7 @@ nav ul {
 }
 
 nav li {
-  margin: 0 10px;
+  margin: 0 15px;
   text-align: left;
 }
 
@@ -149,7 +149,7 @@ a {
 
 .card-text {
   position: absolute;
-  top: 58%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   opacity: 0;
@@ -171,7 +171,8 @@ a {
 
 .card-text p {
   margin-top: 0;
-  text-align: justify;
+  text-align:justify;
+  letter-spacing: 0.8px;
 }
 
 .card-text a {
@@ -180,6 +181,7 @@ a {
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .card-text a:hover {
@@ -204,7 +206,8 @@ a {
 
 .card h2 {
   position: absolute;
-  top: 0;
+  top: -5px;
+  padding: 5px;
   z-index: 1;
   width: 100%;
   text-align: center;
