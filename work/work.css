@@ -114,6 +114,8 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 120px;
+  width: 100%;
+  align-items: center;
 }
 
 .down-arrow {
@@ -125,6 +127,8 @@ a {
   border-bottom: 1px solid #000;
   transform: rotate(-45deg);
   margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-container {
@@ -171,7 +175,7 @@ a {
 
 .card-text p {
   margin-top: 0;
-  text-align:justify;
+  text-align: justify;
   letter-spacing: 0.8px;
 }
 
@@ -260,10 +264,6 @@ a {
   .work-main p {
     margin-top: 30px;
     ;
-  }
-
-  .scroll-down {
-    margin-top: 30px;
   }
 
   .card-container {
