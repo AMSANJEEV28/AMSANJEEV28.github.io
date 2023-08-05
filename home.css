@@ -85,7 +85,7 @@ a[href^="mailto:"] {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -350px;
+  margin-left: -300px;
 }
 
 .contacts ul {
